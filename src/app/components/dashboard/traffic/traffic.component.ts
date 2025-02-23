@@ -5,7 +5,6 @@ import { DashboardItemComponent } from '../../../ui/dashboard-item/dashboard-ite
 @Component({
   selector: 'app-traffic',
   standalone: true,
-  imports: [DashboardItemComponent],
   templateUrl: './traffic.component.html',
   styleUrl: './traffic.component.css',
 })

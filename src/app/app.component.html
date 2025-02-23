@@ -1,10 +1,28 @@
 <app-header />
 <main>
   <div id="dashboard">
-    <app-server-status />
+    <app-dashboard-item
+      [imgSrc]="'status.png'"
+      [title]="'Server Status'"
+      [alt]="'A signal symbol'"
+    >
+      <app-server-status />
+    </app-dashboard-item>
 
-    <app-traffic [trafficData]="dummyTrafficData" [maxTraffic]="maxTraffic" />
+    <app-dashboard-item
+      [imgSrc]="'globe.png'"
+      [title]="'Traffic'"
+      [alt]="'A traffic symbol'"
+    >
+      <app-traffic [trafficData]="dummyTrafficData" [maxTraffic]="maxTraffic" />
+    </app-dashboard-item>
 
-    <app-tickets />
+    <app-dashboard-item
+      [imgSrc]="'list.png'"
+      [title]="'Support Tickets'"
+      [alt]="'A ticket symbol'"
+    >
+      <app-tickets />
+    </app-dashboard-item>
   </div>
 </main>

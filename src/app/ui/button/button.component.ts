@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input, output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'button[appButton]',
@@ -7,12 +7,4 @@ import { Component, input, output } from '@angular/core';
   templateUrl: './button.component.html',
   styleUrl: './button.component.css',
 })
-export class ButtonComponent {
-  label = input.required<string>();
-  icon = input.required<string>();
-  //onClick = output<void>();
-
-  onButtonClick() {
-    //this.onClick.emit();
-  }
-}
+export class ButtonComponent {}
